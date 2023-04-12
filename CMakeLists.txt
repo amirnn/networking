@@ -1,9 +1,8 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.25.0)
 project(networking CXX)
 
 
-
-add_executable(networking src/networking.cpp src/main.cpp)
+add_executable(networking src/networking.cc src/main.cc src/Peer.cc src/Peer.hpp)
 
 
 

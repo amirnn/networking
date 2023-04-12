@@ -12,7 +12,7 @@ class networkingRecipe(ConanFile):
     author = "Amir Nourinia amir.nouri.nia@gmail.com"
     url = "<Package recipe repository url here, for issues about the package>"
     description = "<Description of networking package here>"
-    topics = ("<Put some tag here>", "<here>", "<and here>")
+    topics = ("C++", "Networking", "Framework")
 
     # Binary configuration
     settings = "os", "compiler", "build_type", "arch"
@@ -20,13 +20,13 @@ class networkingRecipe(ConanFile):
     # Sources are located in the same place as this recipe, copy them to the recipe
     exports_sources = "CMakeLists.txt", "src/*"
 
-    def requirements(self):
-        self.requires(
-            "boost/1.81.0"
-        )
-
     def layout(self):
         cmake_layout(self)
+
+    def requirements(self):
+        self.requires(
+            "boost/[~1]"
+        )
 
     def generate(self):
         deps = CMakeDeps(self)

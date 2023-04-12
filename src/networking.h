@@ -7,4 +7,7 @@
   #define NETWORKING_EXPORT
 #endif
 
-NETWORKING_EXPORT void networking();
+namespace bluecpp {
+    NETWORKING_EXPORT void getInfo();
+}
+
