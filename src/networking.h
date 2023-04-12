@@ -1,5 +1,6 @@
 #pragma once
 
+#include <boost/asio.hpp>
 
 #ifdef _WIN32
   #define NETWORKING_EXPORT __declspec(dllexport)
@@ -8,6 +9,7 @@
 #endif
 
 namespace bluecpp {
-    NETWORKING_EXPORT void getInfo();
+
+    NETWORKING_EXPORT void getInfo() noexcept;
 }
 

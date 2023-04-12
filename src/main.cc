@@ -1,5 +1,5 @@
 #include "networking.h"
-#include <boost>
+#include <boost/asio.hpp>
 
 int main() {
 

@@ -5,7 +5,7 @@
 namespace bluecpp {
 
 
-    void getInfo() {
+    void getInfo() noexcept {
 
 
 #ifdef NDEBUG
