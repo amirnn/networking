@@ -24,9 +24,10 @@ class networkingRecipe(ConanFile):
         cmake_layout(self)
 
     def requirements(self):
-        self.requires(
-            "boost/[~1]"
-        )
+        self.requires("boost/[~1]")
+        self.requires("jsoncpp/[~1]")
+        # self.requires("nlohmann_json/[~3]")
+        self.requires("oatpp/[~1]")
 
     def generate(self):
         deps = CMakeDeps(self)
