@@ -33,7 +33,7 @@ class networkingRecipe(ConanFile):
         deps = CMakeDeps(self)
         deps.generate()
         tc = CMakeToolchain(self)
-        tc.user_presets_path = "ConanCMakePresets.json"
+        tc.user_presets_path = "ConanPresets.json"
         tc.generate()
 
     def build(self):
