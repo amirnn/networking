@@ -21,7 +21,7 @@ class networkingRecipe(ConanFile):
     exports_sources = "CMakeLists.txt", "src/*"
 
     def layout(self):
-        cmake_layout(self)
+        cmake_layout(self, src_folder="..", build_folder="../build")
 
     def requirements(self):
         self.requires("boost/[~1]")
@@ -33,6 +33,7 @@ class networkingRecipe(ConanFile):
         deps = CMakeDeps(self)
         deps.generate()
         tc = CMakeToolchain(self)
+        tc.user_presets_path = "ConanCMakePresets.json"
         tc.generate()
 
     def build(self):
@@ -43,5 +44,3 @@ class networkingRecipe(ConanFile):
     def package(self):
         cmake = CMake(self)
         cmake.install()
-
-    
