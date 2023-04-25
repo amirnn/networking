@@ -3,5 +3,8 @@
 .idea
 
 build/*
+out/*
 
+.cache
 ConanPresets.json
+compile_commands.json
