@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS True)
 
-# include("conan/Dependencies.cmake")
+include("conan/Dependencies.cmake")
 
 add_subdirectory("src")
 
