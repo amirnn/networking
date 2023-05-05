@@ -2,11 +2,9 @@
 arch=armv8
 build_type=Release
 compiler=gcc
-compiler.cppstd=23
+compiler.cppstd=gnu23
 compiler.libcxx=libstdc++11
-compiler.version=12.2
+compiler.version=13.1
 os=Macos
-[buildenv]
-CC=/opt/homebrew/bin/gcc-12
-CXX=/opt/homebrew/bin/g++-12
-LD=/opt/homebrew/Cellar/llvm/16.0.1/bin/lld
+[conf]
+tools.build:compiler_executables={ "c": "/opt/homebrew/bin/gcc-13", "cpp":"/opt/homebrew/bin/g++-13"}
