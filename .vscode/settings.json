@@ -1,4 +1,19 @@
 {
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.idea": true,
+        "**/.cache": true,
+        "**/compile_commands.json": true,
+        "**/ConanPresets.json": true,
+        "**/venv": true,
+        "**/build": true,
+        "**/test_package": true
+    },
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },

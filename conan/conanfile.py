@@ -28,6 +28,7 @@ class networkingRecipe(ConanFile):
         self.requires("jsoncpp/[~1]")
         # self.requires("nlohmann_json/[~3]")
         self.requires("oatpp/[~1]")
+        self.requires("imgui/cci.20230105+1.89.2.docking")
 
     def generate(self):
         deps = CMakeDeps(self)
