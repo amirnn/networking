@@ -3,6 +3,8 @@
 # .vscode
 .cache
 .idea
+.cproject
+.project
 
 build
 out
